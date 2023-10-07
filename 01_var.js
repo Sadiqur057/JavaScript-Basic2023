@@ -3,7 +3,14 @@
 // JS is Dynamically Typed Language => We can change variable type in runtime
 
 // Declare a variable
-
+// let = block scoped variables
+// block scoped variables=> the variable is only accessible and visible within the block in which it is declared, as well as any inner blocks, but it is not accessible outside of those blocks.
+{
+    let blockVar= "This is a block scoped variable";
+}
+// const = constant variables
+// console.log(blockVar); 
+// Err=> as blockVar is declared inside block, it will show error
 var a = 67; // old
 let b= 24; // new
 // a,b => identifier
