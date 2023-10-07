@@ -12,3 +12,14 @@ let e = "Sadiqur Rahman"; // string
 let f = Symbol("I am a nice symbol"); // symbol
 let g ; // undefinedd
 console.log(a,b,c,d,e,f,g,);
+
+// Non primitive data types - 1
+// Object
+
+const person={
+    fname: "Sadiqur",
+    lname: "Rahman",
+    age:23,
+    dept: "CSE"
+};
+console.log(person);
