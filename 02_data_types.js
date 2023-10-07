@@ -12,7 +12,7 @@ let e = "Sadiqur Rahman"; // string
 let f = Symbol("I am a nice symbol"); // symbol
 let g ; // undefinedd
 console.log(a,b,c,d,e,f,g,);
-
+console.log(typeof g);
 // Non primitive data types - 1
 // Object
 
@@ -23,3 +23,4 @@ const person={
     dept: "CSE"
 };
 console.log(person);
+console.log(typeof person)
