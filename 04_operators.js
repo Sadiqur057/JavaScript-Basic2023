@@ -32,6 +32,7 @@ console.log("x%=y -> x=x%y");
 console.log("x**=y -> x=x**y");
 
 console.log("Comparison operators");
+console.log("x==y is",x==y);
 console.log("== -> equal to");
 console.log("!= -> not equal ");
 console.log("=== -> equal value and type");
@@ -41,3 +42,11 @@ console.log("< -> Less than");
 console.log(">= -> Greater than or equal to");
 console.log("<= -> Less than or equal to");
 console.log("? -> Ternary operator");
+
+console.log("logical Operators");
+console.log("x<y && x!=y is ", x<y && x!=y)
+console.log("&& -> logical and");
+console.log("|| -> logical and");
+console.log("! -> logical not");
+
+
