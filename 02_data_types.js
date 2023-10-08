@@ -23,4 +23,4 @@ const person={
     dept: "CSE"
 };
 console.log(person);
-console.log(typeof person)
+console.log(typeof person);
