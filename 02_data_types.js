@@ -24,3 +24,8 @@ const person={
 };
 console.log(person);
 console.log(typeof person);
+
+// accessing objects
+console.log("Accessing Objects");
+console.log(person["fname"]);
+console.log(person["dept"]);
