@@ -1,4 +1,5 @@
 console.log("Operator in JS");
+console.log(" Arithmetic Operator");
 let a = 10;
 let b= 3;
 console.log("a = ",a);
@@ -17,3 +18,15 @@ console.log("++a = ", ++a);
 console.log("a = ", a);
 console.log("--b = ", --b);
 console.log("b = ", b);
+
+
+console.log("Assignment Operators");
+let x = 5;
+let y = 7;
+console.log("= -> x=y");
+console.log("x+=y -> x=x+y");
+console.log("x-=y -> x=x-y");
+console.log("x*=y -> x=x*y");
+console.log("x/=y -> x=x/y");
+console.log("x%=y -> x=x%y");
+console.log("x**=y -> x=x**y");
