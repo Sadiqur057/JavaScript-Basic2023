@@ -30,3 +30,14 @@ console.log("x*=y -> x=x*y");
 console.log("x/=y -> x=x/y");
 console.log("x%=y -> x=x%y");
 console.log("x**=y -> x=x**y");
+
+console.log("Comparison operators");
+console.log("== -> equal to");
+console.log("!= -> not equal ");
+console.log("=== -> equal value and type");
+console.log("!== -> not equal value or not equal type");
+console.log("> -> Greated than");
+console.log("< -> Less than");
+console.log(">= -> Greater than or equal to");
+console.log("<= -> Less than or equal to");
+console.log("? -> Ternary operator");
