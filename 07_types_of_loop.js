@@ -35,4 +35,8 @@ console.log(`Total Marks: ${totalMarks}`);
 avgMarks = totalMarks/numofStud;
 console.log(`Average mark: ${avgMarks}`);
 
-// for of loop => used to loop  through the values of the object
+// for of loop => used to loop  through the values of the iterable objects like arrays, strings, maps, and sets
+
+for(letter of "Sadiq"){
+    console.log(letter)
+}
