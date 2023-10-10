@@ -12,8 +12,19 @@ for(i;i<=3;i++){
 console.log(`Sum of the numbers ${sum}`);
 
 // while loop => loops a block based on specific condition
+i=1;
+while(i<=3){
+    console.log(`While loop executing : ${i}`);
+    i+=1;
+}
 
 // do while loop  => While loop variant which runs atleast once , even if the conditions are not met.
+
+i=1;
+do{
+    console.log(`do while loop executing : ${i}, even if the condition does not met`);
+    i+=1;
+}while(i>3);
 
 // for in loop => used to loop throuh the keys of an object
 
@@ -37,6 +48,6 @@ console.log(`Average mark: ${avgMarks}`);
 
 // for of loop => used to loop  through the values of the iterable objects like arrays, strings, maps, and sets
 
-for(letter of "Sadiq"){
+for(letter of "ASDF"){
     console.log(letter)
 }
