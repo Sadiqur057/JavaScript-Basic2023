@@ -22,7 +22,7 @@ while(i<=3){
 
 i=1;
 do{
-    console.log(`do while loop executing : ${i}, even if the condition does not met`);
+    console.log(`do while loop executing : ${i}, even if the condition does not met it will execute once and then check the condition to execute further`);
     i+=1;
 }while(i>3);
 
