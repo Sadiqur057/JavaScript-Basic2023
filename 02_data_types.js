@@ -29,3 +29,6 @@ console.log(typeof person);
 console.log("Accessing Objects");
 console.log(person["fname"]);
 console.log(person["dept"]);
+// print the length of object
+let personLength = Object.keys(person).length;
+console.log(personLength);
