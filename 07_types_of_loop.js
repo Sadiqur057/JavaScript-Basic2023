@@ -1,5 +1,9 @@
-// for loop, while loop, do while loop => repeated operation based on given condition
+// for loop => loop a block of code based num of times given in conditions
 
-// for in loop => used to loop in keys of object
+// while loop => loops a block based on specific condition
 
-// for of loop => used to loop in through values of the object
+// do while loop  => While loop variant which runs atleast once , even if the conditions are not met.
+
+// for in loop => used to loop throuh the keys of an object
+
+// for of loop => used to loop  through the values of the object
