@@ -10,7 +10,7 @@ for(let i=0; i<Object.keys(students).length;i++){
 
 // qus 2 => Write the program in qus 1 using for in loop
 
-for(stud in students){
+for(let stud in students){
     console.log(`Marks of ${stud} is ${students[stud]}`);
 }
 
@@ -19,15 +19,22 @@ let winnerNum = 7;
 let guessingNum =0;
 let breakLoop = false;
 
-// while(guessingNum!=winnerNum){
-//     guessingNum = prompt("Enter number between 1 to 10: ");
-//     if(guessingNum==winnerNum){
-//         alert("You guessed it right");
-//         break; 
-//     }else{
-//         alert("Wrong. Guess again!")
-//     }
-// }
+while(guessingNum!=winnerNum){
+    guessingNum = prompt("Enter number between 1 to 10: ");
+    alert("Try again !");
+}
+alert("you have guessed the correct answer.");
+
+// OR
+while(guessingNum!=winnerNum){
+    guessingNum = prompt("Enter number between 1 to 10: ");
+    if(guessingNum!=winnerNum){
+        alert("Wrong. Try again!")
+    }
+}
+alert("you have guessed the correct answer.");
+
+
 
 
 // qus 4 => write a function to find mean of 5 number
