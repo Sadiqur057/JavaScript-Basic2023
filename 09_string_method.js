@@ -58,3 +58,10 @@ console.log(myName.substr(1,5));
 
 // includes() => return true if the string incudes
 console.log(myDetails.includes("CSE"));
+
+// startsWith();
+let string = "Hello World";
+console.log(string.startsWith("Hello"));
+
+// endsWith()
+console.log(string.endsWith("World"));

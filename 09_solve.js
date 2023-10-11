@@ -7,6 +7,10 @@ console.log("har\"".length);
 let string = "Hello World";
 console.log(string.includes("Hello"));
 
+console.log(string.startsWith("Hello"));
+
+console.log(string.endsWith("World"));
+
 // qus 3 => Write a pogram to convert a given string to lowercase
 string = "Hello World";
 console.log(string.toLowerCase());
