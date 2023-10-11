@@ -17,7 +17,7 @@ for(let stud in students){
 // qus 3 => write a program to find "try again" until the user enters the correct number
 let winnerNum = 7;
 let guessingNum =0;
-let breakLoop = false;
+
 
 while(guessingNum!=winnerNum){
     guessingNum = prompt("Enter number between 1 to 10: ");
