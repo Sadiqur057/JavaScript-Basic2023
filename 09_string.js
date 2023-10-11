@@ -6,16 +6,27 @@ console.log(myName);
 console.log(myName.length);
 
 // Single quotation can inside double quotation 
-let place = "Cox's Bazar";
-console.log(place);
+// let place = "Cox's Bazar";
+// console.log(place);
 
-// Double quotation can inside  single quotation 
-place = '"Saint martin" could be a better choice';
-console.log(place);
+// // Double quotation can inside  single quotation 
+// place = '"Saint martin" could be a better choice';
+// console.log(place);
 
-//  Escape Sequence Characters
-place = "Cox\'s Bazar";
-console.log(place);
+// //  Escape Sequence Characters
+// place = "Then Cox\'s Bazar";
+// console.log(place);
+// place = "\"Saint martin\" Also a better choice";
+// console.log(place);
+
+// More escape sequence character
+let s1 = "This is first line \nThis is second line, \tanother text after tab";
+console.log(s1);
+
+
+let s2 = "Using carriage return \n Replaced text \rit moves the cursor back to the beginning of the current line, allowing you to overwrite characters from the beginning of the line";
+console.log(s2);
+
 
 // Template literals => With template literals, it is possible to use both single and double quotos inside a string
 let info = `"Tamim" is best friend of 'Shakib'`;
