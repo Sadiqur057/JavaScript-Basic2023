@@ -38,3 +38,14 @@ let person2 = "Shakib";
 // Tamim is a friend of Shakib
 let sentence = `${person1} is a friend of ${person2}`;
 console.log(sentence);
+
+// String is Immutable. String cannot be changed. whenever string method used a new string is created to show the output. Lets try to change an index of string.
+console.log(myName[0]);
+myName[0]='r'; // no changes will be occured to original string.
+console.log(myName[0]);
+// console.log(myName[1]);
+// console.log(myName[2]);
+
+for(i=0; i<myName.length;i++){
+    console.log(myName[i]);
+}
