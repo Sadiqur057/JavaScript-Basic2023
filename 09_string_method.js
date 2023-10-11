@@ -8,8 +8,7 @@ console.log(myName.length);
 console.log(myName.toUpperCase());
 console.log(myName.toLowerCase());
 
-// Slice() => slice a string
-console.log(myName.slice(1,4)); 
+
 
 // replace() => replace string with another
 let myDetails = "I am Sadiqur Rahman, studying CSE at East West University";
@@ -25,3 +24,19 @@ console.log(myBrother.trim());
 
 // indexOf() => find position of particular string
 console.log(myDetails.indexOf("CSE"));
+
+// Substrings
+
+
+
+// slice(start, end) => support negative value. Negative value means start from the end backward.
+console.log(myName.slice(2,-1)); 
+
+// substring(start, end) => doesnot support negative value
+
+console.log(myName.slice(1,4)); 
+
+
+// substr(start, length) => start and take the amount of character given in the lenght
+
+console.log(myName.substr(1,5));
