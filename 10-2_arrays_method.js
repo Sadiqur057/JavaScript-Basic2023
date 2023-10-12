@@ -71,3 +71,10 @@ console.log(alphabets);
 let num = [1,2,3,4,5];
 let splicedNum = num.splice(1,2,101,103,108);
 console.log(`new array = ${num}, removed array elements are ${splicedNum}`);
+
+// slice() => does not modify original array
+let slicedArray = num.slice(2);
+console.log(slicedArray);
+
+let slicedArray2 = num.slice(2,5);
+console.log(slicedArray2);
