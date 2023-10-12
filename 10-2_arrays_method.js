@@ -29,3 +29,18 @@ console.log(`New array after shift = ${numbers} and shifted element is ${shifted
 
 let unshiftedElement = numbers.unshift(14);
 console.log(`New array after unshift = ${numbers} and the new length is ${unshiftedElement}`);
+
+// delete => operator to delete specific index of array. It will make empty in that index but  It doesnot change in length.
+
+console.log(numbers.length);
+delete numbers [0];
+console.log(numbers);
+console.log(numbers.length);
+
+numbers[0]= 11;
+// concat => join two arrays;
+let alphabets = ['a','b','c','d'];
+let fruits = ['mango','apple','banana'];
+let joinedArray = numbers.concat(alphabets,fruits);
+console.log(joinedArray);
+
