@@ -24,3 +24,8 @@ console.log(`New array after push = ${numbers} and the new length is ${arrayLeng
 
 let shiftedElement = numbers.shift();
 console.log(`New array after shift = ${numbers} and shifted element is ${shiftedElement}`);
+
+// shift => add new elements in the first element of the arrray
+
+let unshiftedElement = numbers.unshift(14);
+console.log(`New array after unshift = ${numbers} and the new length is ${unshiftedElement}`);
