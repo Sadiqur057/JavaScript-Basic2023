@@ -1,0 +1,1 @@
+// Arrays => collection of items, can be accessed by index and multiple variable, objects can be stored in single array.
