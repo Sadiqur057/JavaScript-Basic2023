@@ -10,12 +10,12 @@ console.log(joinedString);
 console.log(typeof joinedString);
 
 //  pop = remove the last elements
-// we can check popped element
+// pop() return popped element
 let poppedElement = numbers.pop();
 console.log(`New array after pop = ${numbers} and removed element is ${poppedElement}`);
 
 
 //  push = add new elements in last index
-// we can check pushed element
-let pushedElement = numbers.push(99,56);
-console.log(`New array after push = ${numbers} and added element is ${pushedElement}`);
+// push() return array lenght
+let arrayLength = numbers.push(99,56);
+console.log(`New array after push = ${numbers} and the new length is ${arrayLength}`);
