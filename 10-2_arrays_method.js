@@ -1,5 +1,5 @@
 // toString() => return string;
-let numbers = [1,2,3,4,5,9,11];
+let numbers = [1,2,53,94,85,39,11];
 let convertedString = numbers.toString();
 console.log(convertedString);
 console.log(typeof convertedString);
@@ -38,9 +38,30 @@ console.log(numbers);
 console.log(numbers.length);
 
 numbers[0]= 11;
-// concat => join two arrays;
+// concat() => join two arrays, return new array
 let alphabets = ['a','b','c','d'];
 let fruits = ['mango','apple','banana'];
 let joinedArray = numbers.concat(alphabets,fruits);
 console.log(joinedArray);
 
+// sort() => alphabetically sort array
+joinedArray.sort();
+console.log(joinedArray);
+
+// sort => ascending
+let compare= (a,b)=>{
+    return a-b;
+}
+let ascSort=numbers.sort(compare);
+// sort => descending
+console.log(ascSort);
+
+let compare2 = (x,y) => {
+    return y-x;
+}
+let descSort = numbers.sort(compare2);
+console.log(descSort);
+
+// reverse()
+alphabets.reverse();
+console.log(alphabets);
