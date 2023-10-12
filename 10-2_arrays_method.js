@@ -65,3 +65,9 @@ console.log(descSort);
 // reverse()
 alphabets.reverse();
 console.log(alphabets);
+
+// splice() = takes 3 arguements => (start index to add,how many elements remove, new elements to be added , and can be added more)
+// return removed elements
+let num = [1,2,3,4,5];
+let splicedNum = num.splice(1,2,101,103,108);
+console.log(`new array = ${num}, removed array elements are ${splicedNum}`);
