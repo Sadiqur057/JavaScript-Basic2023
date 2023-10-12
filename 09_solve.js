@@ -17,14 +17,18 @@ console.log(string.toLowerCase());
 
 
 // qus 5 => Extract the amount out of the string -> "The price is 1000 BDT"
-let price = "The price is 1000 BDT";
-let start = price.indexOf("1000");
-console.log(price.slice(start,start+4));
+let priceSlip = "The price is 1000 BDT";
+let start = priceSlip.indexOf("1000");
+
+let price= priceSlip.slice(start,start+4); // return string
+// console.log(typeof price);
+console.log(parseInt(price)); //return number
+// console.log(typeof (parseInt(price)));
 
 
 // qus 6 => Try to change the 4rth character of a given string. were you able to do it?
 string = "Hello world";
-string[0]="Y";
-// The main string won't be changed
-console.log(string[0]);
+string[3]="Y";
+// The main string won't be changed because string is immutable
+console.log(string[3]);
 
