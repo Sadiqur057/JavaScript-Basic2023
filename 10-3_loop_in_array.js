@@ -29,4 +29,8 @@ for (let i of num){
     console.log(i);
 }
 
+// for..in
+for (let i in fruits){
+    console.log(fruits[i]);
+}
 
