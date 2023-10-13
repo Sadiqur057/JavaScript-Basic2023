@@ -42,15 +42,27 @@ arr = [43,56,90];
 let newArray = arr.map((value,index,array)=>{
     console.log(value,index,array);
     return value+1;
-})
+});
 console.log(newArray);
 
 // Array filter method =>  doesnot change original array. create a new array and filter out
 let arr2 = [34,2,53,9,5,32,26];
 a2 = arr2.filter((value)=>{
     return value>10;
-})
+});
 console.log(a2);
 
 // Reduce method
+let arr3 = [3,6,2,9,4,7,1];
+let a3 = arr3.reduce((v1,v2)=>{
+    return v1+v2;
+});
+console.log(a3);
 
+// another way
+
+const reduceFunc = (x,y)=>{
+    return x+y;
+} 
+let a4 = arr3.reduce(reduceFunc);
+console.log(a4);
