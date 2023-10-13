@@ -39,10 +39,6 @@ console.log(myDetails.indexOf("CSE"));
 console.log(myDetails.charAt("2"))
 
 
-// Substrings
-
-
-
 // slice(start, end) => support negative value. Negative value means start from the end backward.
 console.log(myName.slice(2,-1)); 
 
