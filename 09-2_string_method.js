@@ -56,12 +56,12 @@ console.log(myName.slice(1,4));
 console.log(myName.substr(1,5));
 
 
-// includes() => return true if the string incudes
+// includes() =>  return boolean value - true/false
 console.log(myDetails.includes("CSE"));
 
-// startsWith();
+// startsWith()=> return boolean value - true/false
 let string = "Hello World";
 console.log(string.startsWith("Hello"));
 
-// endsWith()
+// endsWith() =>  return boolean value - true/false
 console.log(string.endsWith("World"));
