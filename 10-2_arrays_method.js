@@ -38,7 +38,7 @@ console.log(numbers);
 console.log(numbers.length);
 
 numbers[0]= 11;
-// concat() => join two arrays, return new array
+// concat() => join two or more arrays, return new array
 let alphabets = ['a','b','c','d'];
 let fruits = ['mango','apple','banana'];
 let joinedArray = numbers.concat(alphabets,fruits);
@@ -49,7 +49,7 @@ joinedArray.sort();
 console.log(joinedArray);
 
 // sort => ascending
-let compare= (a,b)=>{
+let compare = (a,b)=>{
     return a-b;
 }
 let ascSort=numbers.sort(compare);
@@ -61,6 +61,7 @@ let compare2 = (x,y) => {
 }
 let descSort = numbers.sort(compare2);
 console.log(descSort);
+
 
 // reverse()
 alphabets.reverse();

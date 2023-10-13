@@ -37,7 +37,6 @@ for (let i in fruits){
 
 // map() =>  new array can be created 
 // can take 3 arguements = value,index,array
-
 arr = [43,56,90];
 let newArray = arr.map((value,index,array)=>{
     console.log(value,index,array);
@@ -52,12 +51,14 @@ a2 = arr2.filter((value)=>{
 });
 console.log(a2);
 
-// Reduce method
-let arr3 = [3,6,2,9,4,7,1];
+// Reduce method =>  return string/number
+let arr3 = ['a','b','c',[1,2,3]];
 let a3 = arr3.reduce((v1,v2)=>{
     return v1+v2;
 });
-console.log(a3);
+console.log(a3,typeof a3);
+
+
 
 // another way
 
