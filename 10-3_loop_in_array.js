@@ -45,3 +45,12 @@ let newArray = arr.map((value,index,array)=>{
 })
 console.log(newArray);
 
+// Array filter method =>  doesnot change original array. create a new array and filter out
+let arr2 = [34,2,53,9,5,32,26];
+a2 = arr2.filter((value)=>{
+    return value>10;
+})
+console.log(a2);
+
+// Reduce method
+
