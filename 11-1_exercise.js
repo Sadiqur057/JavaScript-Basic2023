@@ -1,6 +1,7 @@
 // Write a javascript program to generate a random number and store it in a variable. The program then takes an input from the user to tell them whether the guess is correct, greater or lower than the original number
 let winningNum = Math.floor(Math.random()*100);
 let guessingNum;
+let score = 0;
 console.log(winningNum);
 while(guessingNum!=winningNum){
     guessingNum = prompt("Guess a number: ");
@@ -12,7 +13,8 @@ while(guessingNum!=winningNum){
         }else if(guessingNum>100 && guessingNum<0){
             alert("The number should be between 1-100");
         }
+        score +=1;
     }
 }
-alert("You have guessed the correct number");
+alert(`You have guessed the correct number and your score is: ${100-score}`);
 
