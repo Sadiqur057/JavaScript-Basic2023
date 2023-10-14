@@ -67,3 +67,21 @@ const reduceFunc = (x,y)=>{
 } 
 let a4 = arr3.reduce(reduceFunc);
 console.log(a4);
+
+const stud = [
+    { name: 'Alice', age: 25 },
+    { name: 'Charlie', age: 30 },
+    { name: 'Bob', age: 25 },
+    { name: 'David', age: 30 },
+    { name: 'Eve', age: 25 },
+];
+
+const result = stud.reduce((val, index) => {
+    if (!val[index.age]) {
+        val[index.age] = [];
+    }
+    val[index.age].push(index.name);
+    return val;
+}, {});
+
+console.log(result);
