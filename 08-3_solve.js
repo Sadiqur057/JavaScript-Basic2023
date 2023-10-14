@@ -16,16 +16,7 @@ for(let stud in students){
 
 // qus 3 => write a program to find "try again" until the user enters the correct number
 let winnerNum = 7;
-let guessingNum =0;
-
-
-while(guessingNum!=winnerNum){
-    guessingNum = prompt("Enter number between 1 to 10: ");
-    alert("Try again !");
-}
-alert("you have guessed the correct answer.");
-
-// OR
+let guessingNum;
 while(guessingNum!=winnerNum){
     guessingNum = prompt("Enter number between 1 to 10: ");
     if(guessingNum!=winnerNum){
@@ -33,6 +24,7 @@ while(guessingNum!=winnerNum){
     }
 }
 alert("you have guessed the correct answer.");
+
 
 
 
