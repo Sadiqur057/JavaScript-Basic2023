@@ -24,3 +24,4 @@ while(i<5){
     i++;
 }
 console.timeEnd("whileLoop");
+
