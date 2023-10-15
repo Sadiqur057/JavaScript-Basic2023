@@ -7,10 +7,16 @@
 </head>
 <body>
     <script>
-        alert("Enter the value of n");
-        let n = prompt("Enter here :");
+        let n = prompt("Enter a number :","222");
         n = parseInt(n);
         alert("You have entered " +n+" and it is a "+ (typeof n));
+        let write = confirm("Do you want to write it to the page?")
+        if(write){
+            document.write(n);
+        }else{
+            document.write("Please allow me to write");
+        }
+        
     </script>
 </body>
 </html>
