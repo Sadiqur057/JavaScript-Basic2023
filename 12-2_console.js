@@ -9,3 +9,18 @@ let obj = {
 console.table(obj);
 console.warn("This is a warn");
 console.info("This is a info");
+console.table(console);
+
+console.time("forLoop");
+for(let i = 0; i<5;i++){
+    console.log(i);
+}
+console.timeEnd("forLoop");
+
+console.time("whileLoop");
+let i = 0
+while(i<5){
+    console.log(i);
+    i++;
+}
+console.timeEnd("whileLoop");
