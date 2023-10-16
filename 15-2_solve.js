@@ -21,4 +21,15 @@ if (c) {
   }
 }
 
+// qus 3 => In the previous qus use console.error to log the error if the age entered is negative
 
+if(age<0){
+    console.error("Negative value");
+}
+
+// qus 4 => Write a program to change the url to google.com(redirection) of user enters a number greater than 4
+let num = prompt("Enter a num: ")
+num = parseInt(num);
+if(num>4){
+    location.href="https://google.com/"
+}
