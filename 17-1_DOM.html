@@ -8,11 +8,29 @@
 <body>
     <h1>Dom manipulation</h1>
     <p id="colorChange">The color can be changed using dom manipulation</p>
+    
     <button onclick="changeColor()">Change color</button>
+    <p>DOM converts html page javascript object and can be accessed like java script object</p> 
+    <p>DOM tree refers to the HTML page where all teh nodes are objects. There can be 3 main types of nodes in the DOM tree</p>
+    <ul>
+        <li>text nodes</li>
+        <li>element nodes</li>
+        <li>comment nodes</li>
+    </ul>
+    <p>In an HTML page, root is html, head and body are children</p>
+    <p>text is the leaf node </p>
+    <h1>Walking the DOM</h1>
+    <ul>
+        <li>document.body => page body</li>
+        <li>document.getElement => page html tag</li>
+        <li>document.head => html head</li>
+        <li>document.title => return string</li>
+    </ul>
 </body>
 </html>
 <script>
     let changeColor = ()=>{
         document.getElementById("colorChange").style.color="red";
     }
+    document.title= "This is a title"
 </script>
