@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Dom manipulation</h1>
+    <p id="colorChange">The color can be changed using dom manipulation</p>
+    <button onclick="changeColor()">Change color</button>
+</body>
+</html>
+<script>
+    let changeColor = ()=>{
+        document.getElementById("colorChange").style.color="red";
+    }
+</script>
