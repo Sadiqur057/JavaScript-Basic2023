@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent and Sibling</title>
+</head><!-- <body> firstChild -->
+    <h1>Parent and sibling</h1>
+    <div>
+        <span>Span tag</span>
+        <p>Div is parent of this p tag and and span tag is left sibling and h3 tag is the next sibling </p>
+        <h3>h3 tag</h3>
+        <h2>Parent node</h2>
+    </div>
+</body>
+<script>
+    // $0.nextSibling
+    console.log(document.body.firstChild);
+    console.log(document.body.lastChild);
+    console.log(document.documentElement.parentNode);
+    console.log(document.documentElement.parentElement);
+</script>
+</html>
