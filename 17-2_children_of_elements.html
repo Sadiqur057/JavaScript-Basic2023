@@ -13,4 +13,17 @@
     <h3>Descendent nodes:</h3>
     <p>All nested elements, children,their children and so on..</p>
 </body>
+<script>
+    console.log(document.body.firstChild);
+    // first node will be printed , could be space as text node
+    console.log(document.body.lastChild);
+    let childNodes =document.body.childNodes;
+    console.log(typeof childNodes); // object
+    let arr = Array.from(document.body.childNodes);
+    console.log(arr);
+
+    // elen.childNodes[0]===elen.firstChild
+    // elen.childNodes[elen.childNodes.length-1]===elen.lastChild
+</script>
+
 </html>
