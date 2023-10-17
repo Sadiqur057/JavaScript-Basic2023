@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parent and Sibling</title>
-</head><!-- <body> firstChild -->
+</head><body>
     <h1>Parent and sibling</h1>
     <div>
         <span>Span tag</span>
@@ -16,6 +16,8 @@
 <script>
     // $0.nextSibling
     console.log(document.body.firstChild);
+    let a = document.body.firstChild;
+    console.log(a.nextSibling);
     console.log(document.body.lastChild);
     console.log(document.documentElement.parentNode);
     console.log(document.documentElement.parentElement);
