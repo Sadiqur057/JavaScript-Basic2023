@@ -2,7 +2,7 @@
 
 const options = ["S", "G", "W"];
 const randIndex = Math.floor(Math.random()*options.length)
-const compInput = options[randomIndex];
+const compInput = options[randIndex];
 
 let userInput = prompt("Enter S or W or G:");
 
