@@ -1,4 +1,4 @@
-// qus 1 => Create anavbar and change the color of its first element to red
+// qus 1 => Create a navbar and change the color of its first element to red
 
 // qus 2 => Create a table without tbody. Now use "view page source" button to check whether it has a tbody or not
 
