@@ -6,14 +6,16 @@
     <title>DOM - matches</title>
 </head>
 <body>
-    <div class="box" id="id1">This is an element 1</div>
+    <div class="box" id="id1">This is an element 1
+        <p class="ptag"> p tag1</p>
+    </div>
     <div class="box" id="id2">This is an element 2</div>
 
     <script>
         let id1 = document.getElementById("id1");
         console.log(id1);
 
-        // matches
+        // matches return true if is there any
         console.log(id1.matches(".box"));
     </script>
 </body>
