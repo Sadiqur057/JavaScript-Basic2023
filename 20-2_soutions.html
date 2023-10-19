@@ -27,8 +27,7 @@
         </ul>
     </nav>
 
-    <!-- // qus 2 => Create a table without tbody. Now use "view page source" button to check whether it has a tbody or not -->
-    <!-- ans: It does have tbody -->
+
     <table>
         <tr>
             <th>Name</th>
@@ -39,11 +38,26 @@
             <td>23</td>
         </tr>
     </table>
+    <div id="box">
+        <p>ptag1</p>
+        <p>ptag2</p>
+        <p>ptag3</p>
+    </div>
+    
 
     <script>
         <!-- // qus 1 => Create a navbar and change the color of its first element to red -->
         let firstElem = document.body.firstElementChild.firstElementChild.firstElementChild;
         firstElem.style.color = "red";
+
+        <!-- // qus 2 => Create a table without tbody. Now use "view page source" button to check whether it has a tbody or not -->
+    // <!-- ans: It does have tbody -->
+
+        // qus 3 => Create an element with 3 children. Now change the color or first and last element to green
+        let box = document.getElementById("box");
+        box.firstElementChild.style.color="green";
+        box.lastElementChild.style.color="green";
+
     </script>
 </body>
 </html>
