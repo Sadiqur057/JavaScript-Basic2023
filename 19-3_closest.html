@@ -9,7 +9,7 @@
     <h1>DOM- closest</h1>
     <p>elem.matches(css) -> to look for the nearest anchestor that matches the given css selector and the elen itself also checked. return true if present or null if not</p>
     <div class="box" id="id1">This is an element 1
-        <p class="ptag"> p tag1</p>
+        <span id="sp1"> p tag1</span>
     </div>
     <div class="box" id="id2">This is an element 2</div>
 
@@ -18,7 +18,8 @@
         console.log(id1);
 
         // matches return true if is there any
-        console.log(id1.closest(".box"));
+        let sp1= document.getElementById("sp1");
+        console.log(id1.closest(sp1));
     </script>
 </body>
 </html>
