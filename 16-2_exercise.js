@@ -21,6 +21,8 @@ const game = (compInput,userInput) =>{
         alert("Computer win");
     }else if(compInput == "G" && userInput =="W"){
         alert("Computer win");
+    }else{
+        alert("Wrong input!");
     }
 }
 
