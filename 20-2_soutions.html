@@ -53,7 +53,7 @@
 
     <script>
         <!-- // qus 1 => Create a navbar and change the color of its first element to red -->
-        let firstElem = document.body.firstElementChild.firstElementChild.firstElementChild;
+        let firstElem = document.getElementsByTagName("nav")[0].firstElementChild.firstElementChild;
         firstElem.style.color = "red";
 
         // qus 2 => Create a table without tbody. Now use "view page source" button to check whether it has a tbody or not -->
@@ -67,7 +67,13 @@
         // qus 4 => Write a javascript program to change background of all <li> tags to cyan
         
         let li=document.getElementsByTagName('li');
-        li[4].style.color="cyan";
+        for(i=0;i<li.length;i++){
+            li[i].style.background="cyan";
+        }
+        // OR
+        Array.from(li).forEach((elem) =>{
+            elem.style.background="cyan";
+        })
 
         // qus 5 => Which of the following is used to look for the farthest ancestor that matches a given CSS selector
         let options = ["matches","closest","contains","none of this above"];
