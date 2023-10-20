@@ -1,9 +1,12 @@
 .red{
-    background-color: darkred;
+    background-color: lightcoral;
     color: white;
 }
 
 .green{
     background-color: darkgreen;
     color: white;
+}
+.text-dark{
+    color: black;
 }
