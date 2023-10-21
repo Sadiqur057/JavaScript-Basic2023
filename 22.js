@@ -16,3 +16,24 @@ let y = document.getElementsByTagName("span")[0];
 console.dir(y);
 console.dir(document.body.firstChild.nodeName);
 console.dir(document.body.firstElementChild.nodeName);
+
+//22-2_innerHTML = the property works only for element nodes
+let z = document.getElementById("first");
+z.innerHTML = "This is a paragraph declared using innerHTML";
+
+
+// outerHTML = the property contains the full HTML innerHTML + the element itself
+// z.outerHTML = "<div>Hello changed using outerHTML</div>";
+
+// data, nodeValue => return value
+let a = document.body.firstChild;
+let b = document.getElementById("first");
+a.data;
+a.nodeValue;
+
+// textContent
+b.textContent;
+
+// hidden
+let c = document.getElementById("hidden") ;
+c.hidden= false;
