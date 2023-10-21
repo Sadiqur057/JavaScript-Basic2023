@@ -1,5 +1,8 @@
+// attributes
+let first = document.getElementById("first");
+console.log(first.attributes);
+
 // getAttribute => find atribute name
-let first = document.getElementById("first")
 let a = first.getAttribute("class");
 console.log(a);
 
@@ -9,3 +12,12 @@ console.log(b);
 
 // setAttribute
 first.setAttribute("hidden","true");
+let second = document.getElementById("second");
+second.setAttribute("class","text-dark red");
+ 
+// removeAttribute
+second.removeAttribute("class");
+
+// dataset
+console.log(first.dataset);
+console.log(first.dataset.game);
