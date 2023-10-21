@@ -20,3 +20,10 @@ div.innerHTML = "<h1>Hello people</h1>";
 
 // replaceWith
 a.replaceWith(div);
+
+// Insert adjacent html, element,text
+let c = document.getElementById("second");
+c.insertAdjacentHTML('beforeend','<div id="test">beforeend</div>');
+// beforebegin
+// afterbegin
+// afterend
