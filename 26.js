@@ -15,6 +15,26 @@ const sum = (a,b) =>{
 setTimeout(sum,1000,1,2);
 
 // setInterval()
-setInterval(function(){
+let b = setInterval(function(){
     alert("setInterval");
-},30000);
+},3000);
+let count =0;
+const mul=(a,b)=>{
+    document.write(a+b);
+}
+setInterval(mul,1000,3,4);
+
+//clearInterval
+clearInterval(b);
+
+const interval = setInterval(()=>{
+    document.write("interval running");
+    count++;
+
+    if(count==3){
+        clearInterval(interval);
+        document.write("interval closed");
+    }
+},3000);
+
+
