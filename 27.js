@@ -3,7 +3,7 @@
 let btn = document.getElementById("btn");
 let x = (e)=>{
     alert("Hello world 1");
-    // console.log(e.target.value);
+
 }
 let y = (e)=>{
     alert("Hello world 2");
@@ -18,3 +18,10 @@ if(a==2){
 
 // Event Object = when an event happens, the browser create an event object, puts details into it and passesit as an arguement to the handler
 
+let z = (e)=>{
+    alert("Hello world 1");
+    console.log(e.target.value);
+    console.log(e.target);
+    console.log(e.type,e.clientX,e.clientY);
+}
+btn.addEventListener("click",z);
