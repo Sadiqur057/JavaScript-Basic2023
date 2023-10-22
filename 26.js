@@ -13,3 +13,8 @@ const sum = (a,b) =>{
 }
 
 setTimeout(sum,1000,1,2);
+
+// setInterval()
+setInterval(function(){
+    alert("setInterval");
+},30000);
