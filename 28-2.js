@@ -29,6 +29,9 @@ btn3.onclick = () =>{
  
 // qus 2 => Create a website which is capable of storing bookmarks of your favourite website using href
 
+// ans in html page
+
+
 // qus 3 => Repeat qus 2 using event listeners
 
 // qus 4 => Write a javascript program to keep fetching contents of a website(every 5 second)
