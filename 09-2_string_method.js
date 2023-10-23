@@ -44,7 +44,7 @@ console.log(myName.slice(2,-1));
 
 // substring(start, end) => doesnot support negative value
 
-console.log(myName.slice(1,4)); 
+console.log(myName.substring(1,4)); 
 
 
 // substr(start, length) => start and take the amount of character given in the lenght
