@@ -1,6 +1,8 @@
 // qus 1 => Write a program to show different alerts when different buttons are clicked
-
-
+let btn1 = document.getElementById("btn1");
+btn1.onclick = () =>{
+    alert("This is alert 1");
+} 
 // qus 2 => Create a website which is capable of storing bookmarks of your favourite website using href
 
 // qus 3 => Repeat qus 2 using event listeners
