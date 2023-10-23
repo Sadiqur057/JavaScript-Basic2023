@@ -97,7 +97,6 @@ let turnOff = document.getElementById("off");
 turnOff.onclick=()=>{
     light.remove("bulb");
 }
-
 let startEffect;
 let effect = document.getElementById("effect");
 effect.onclick=()=>{
@@ -105,7 +104,6 @@ effect.onclick=()=>{
         light.toggle("bulb");
     },1000)
 }
-
 let stopEffect = document.getElementById("stop");
 stopEffect.onclick=()=>{
     clearInterval(startEffect);

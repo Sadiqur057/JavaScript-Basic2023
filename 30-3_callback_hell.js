@@ -1,0 +1,1 @@
+// "Callback hell," also known as "Pyramid of Doom," is a term used in the context of asynchronous programming, particularly in JavaScript. It describes a situation where multiple nested callbacks are used to handle asynchronous operations, making the code difficult to read and maintain due to its deeply nested structure. 
