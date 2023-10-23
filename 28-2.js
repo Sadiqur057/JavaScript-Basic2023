@@ -83,3 +83,17 @@ let displayCurrTime =() =>{
 setInterval(displayCurrTime,1000);
 
 // qus 5 => Create a glowing bulb effect using classList toggle method in js
+let box = document.getElementById("box");
+let a = box.classList ;
+let randomClick = document.getElementById("toggle");
+randomClick.onclick =()=>{
+    a.toggle("bulb");
+}
+let turnOn = document.getElementById("on");
+turnOn.onclick=()=>{
+    a.add("bulb");
+}
+let turnOff = document.getElementById("off");
+turnOff.onclick=()=>{
+    a.remove("bulb");
+}

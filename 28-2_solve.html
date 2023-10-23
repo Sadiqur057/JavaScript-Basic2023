@@ -11,6 +11,30 @@
             text-align: center;
             margin-top: 0;
         }
+        .bulb{
+            background-color: rgb(252, 252, 8);
+        }
+        .box{
+            border: 1px solid darkgray;
+            height: 100px;
+            width: 100px;
+            margin: 0px 40px;
+            border-radius: 30px 30px 100px 100px;
+        }
+        .holder{
+            border: 1px solid darkgray;
+            height: 10px;
+            width: 100px;
+            margin: 0 40px;
+            background-color: slategrey;
+        }
+        .switch{
+            height: 30px;
+            margin: 10px 28px;
+        }
+        #toggle{
+            margin-left:  40px ;
+        }
     </style>
     <title>Solution of practice problem</title>
 </head>
@@ -25,7 +49,16 @@
     <button id="google">Google</button>
     <button id="fb">Facebook</button>
     <button id="twitter">Twitter</button>
-
+    <h2>Light</h2>
+    <div class="switch" >
+        <button id="toggle">click</button>
+    </div>
+    <div class="holder"></div>
+    <div class="box" id="box"></div>
+    <div class="switch">
+        <button id="on">Turn on</button>
+        <button id="off">Turn off</button>
+    </div>
     <script src="28-2.js"></script>
 </body>
 </html>
