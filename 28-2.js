@@ -45,10 +45,41 @@ twitter.onclick = () =>{
 }
 
 
-
-
 // qus 3 => Repeat qus 2 using event listeners
+
+// document.getElementById("google").addEventListener('click',()=>{
+//     var url = "https://google.com";
+//     var win =window.open(url,"_blank");
+//     win.focus;
+// })
+google = document.getElementById("google");
+let x = () =>{
+    var url = "https://google.com";
+    window.open(url, "_blank");
+}
+google.addEventListener('click',x);
+
+fb = document.getElementById("fb");
+let y = () =>{
+    var url = "https://fb.com";
+    window.open(url, "_blank");
+}
+fb.addEventListener('click',y);
+
+twitter = document.getElementById("twitter");
+let z = () =>{
+    var url = "https://twitter.com";
+    window.open(url, "_blank");
+}
+twitter.addEventListener('click',z);
 
 // qus 4 => Write a javascript program to keep fetching contents of a website(every 5 second)
 
-// qus 5 => Create a glowing bulb effect using classList toggle method is js
+let displayCurrTime =() =>{
+    const currTime = new Date();
+    const timeDisplay = currTime.toLocaleTimeString();
+    document.getElementById('time').innerHTML = timeDisplay;
+}
+setInterval(displayCurrTime,1000);
+
+// qus 5 => Create a glowing bulb effect using classList toggle method in js

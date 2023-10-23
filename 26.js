@@ -18,6 +18,7 @@ setTimeout(sum,1000,1,2);
 let b = setInterval(function(){
     alert("setInterval");
 },3000);
+
 let count =0;
 const mul=(a,b)=>{
     document.write(a+b);
