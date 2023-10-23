@@ -1,5 +1,5 @@
 // qus 1 => Write a program to show different alerts and change body color when different buttons are clicked
-let intro = document.getElementById("intro");
+let intro = document.querySelector(".intro");
 let btn1 = document.getElementById("btn1");
 btn1.onclick = () =>{
     let x =confirm("Do you want to change background color to Green?");
@@ -84,16 +84,27 @@ setInterval(displayCurrTime,1000);
 
 // qus 5 => Create a glowing bulb effect using classList toggle method in js
 let box = document.getElementById("box");
-let a = box.classList ;
+let light = box.classList ;
 let randomClick = document.getElementById("toggle");
 randomClick.onclick =()=>{
-    a.toggle("bulb");
+    light.toggle("bulb");
 }
 let turnOn = document.getElementById("on");
 turnOn.onclick=()=>{
-    a.add("bulb");
+    light.add("bulb");
 }
 let turnOff = document.getElementById("off");
 turnOff.onclick=()=>{
-    a.remove("bulb");
+    light.remove("bulb");
+}
+let startEffect;
+let effect = document.getElementById("effect");
+effect.onclick=()=>{
+    startEffect = setInterval(()=>{
+        light.toggle("bulb");
+    },1000)
+}
+let stopEffect = document.getElementById("stop");
+stopEffect.onclick=()=>{
+    clearInterval(startEffect);
 }
