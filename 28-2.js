@@ -29,7 +29,22 @@ btn3.onclick = () =>{
  
 // qus 2 => Create a website which is capable of storing bookmarks of your favourite website using href
 
-// ans in html page
+let google = document.getElementById("google");
+google.onclick = () =>{
+    window.location.href = "https://google.com";
+}
+
+let fb = document.getElementById("fb");
+fb.onclick = () =>{
+    window.location.href = "https://fb.com";
+}
+
+let twitter = document.getElementById("twitter");
+twitter.onclick = () =>{
+    window.location.href = "https://twitter.com";
+}
+
+
 
 
 // qus 3 => Repeat qus 2 using event listeners
