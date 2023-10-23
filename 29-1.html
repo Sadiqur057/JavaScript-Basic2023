@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <style>
+      .box {
+        background-color: rgb(7, 59, 110);
+        margin:  auto;
+        text-align: center;
+        display: inline-block;
+      }
+      .innerBox {
+        padding: 10px;
+      }
+      .time {
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        padding: 4px;
+      }
+      .clock{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="innerBox clock">
+        <span class="time" id="hour">12</span>
+        <span class="time">:</span>
+        <span class="time" id="min">12</span>
+        <span class="time">:</span>
+        <span class="time" id="sec">12</span>
+      </div>
+      <div class="innerBox">
+        <span class="time" id="day">12</span>
+        <span class="time">-</span>
+        <span class="time" id="month">12</span>
+        <span class="time">-</span>
+        <span class="time" id="year">12</span>
+      </div>
+    </div>
+
+    <script src="29-1_exercise-4.js"></script>
+  </body>
+</html>
