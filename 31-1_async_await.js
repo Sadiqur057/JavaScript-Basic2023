@@ -1,9 +1,21 @@
 // we can make any function async and promises can be await inside the function
 // async func return a promise
-async function harry(){
-    return 5;
-}
 
-harry().then((x)=>{
-    alert(x);
-})
+
+async function weather(){
+    let weatherDhaka = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("27deg");
+        },1000);
+    })
+    
+    let weatherPabna = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("25deg");
+        },3000);
+    })
+    weatherDhaka.then(alert);
+    weatherPabna.then(alert);
+}
+console.log("Welcome to weather control room")
+weather();
