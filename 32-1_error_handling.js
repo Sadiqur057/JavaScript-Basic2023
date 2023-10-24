@@ -2,22 +2,22 @@ setTimeout(()=>{
     console.log("Hacking your username....... please wait");
 },1000)
 
-try{
-    setTimeout(()=>{
+setTimeout(() => {
+    try{
         console.log("Your username is: "+ username)
-    },4000)
-}catch(error){
-    console.log("username cannot be fetched. security warning: "+error);
-}
+    }catch(error){
+        console.log("Error! username cannot be fetched. security warning: "+error);
+    } 
+}, 3000);
 
 setTimeout(()=>{
     console.log("Hacking your password....... please wait");
 },5000)
 
-try{
-    setTimeout(()=>{
+setTimeout(() => {
+    try{
         console.log("Your password is: "+ password)
-    },8000)
-}catch(error){
-    console.log("password cannot be fetched. security warning: "+error);
-}
+    }catch(error){
+        console.log("Error! password cannot be fetched. security warning: "+error);
+    }
+}, 7000);
