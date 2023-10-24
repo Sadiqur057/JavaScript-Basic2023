@@ -31,7 +31,7 @@ btn3.onclick = () =>{
 
 let google = document.getElementById("google");
 google.onclick = () =>{
-    window.location.href = "https://google.com";
+    location.href = "https://google.com";
 }
 
 let fb = document.getElementById("fb");
@@ -52,12 +52,12 @@ twitter.onclick = () =>{
 //     var win =window.open(url,"_blank");
 //     win.focus;
 // })
-google = document.getElementById("google");
-let x = () =>{
-    var url = "https://google.com";
-    window.open(url, "_blank");
-}
-google.addEventListener('click',x);
+// google = document.getElementById("google");
+// let x = () =>{
+//     var url = "https://google.com";
+//     window.open(url, "_blank");
+// }
+// google.addEventListener('click',x);
 
 fb = document.getElementById("fb");
 let y = () =>{
