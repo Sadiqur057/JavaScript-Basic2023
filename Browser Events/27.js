@@ -37,5 +37,8 @@ let z = (e)=>{
     console.log(e.target.value);
     console.log(e.target);
     console.log(e.type,e.clientX,e.clientY);
+    // clientX => return x coordinate
+    // clientY => return y coordinate
 }
 btn.addEventListener("click",z);
+
