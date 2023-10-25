@@ -2,7 +2,7 @@
 console.log(document.body.firstChild.tagName); // will return undefined for text
 console.log(document.body.firstElementChild.tagName);
 // tagName = only exists for element nodes
-//nodeName = defined for array node (text, comment etc)
+//nodeName = defined for any node (text, comment etc)
 console.log(document.body.firstElementChild.nodeName);
 console.log(document.body.firstChild.nodeName);
 // console.log() =>  shows the element DOM tree

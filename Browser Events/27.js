@@ -11,10 +11,23 @@ let y = (e)=>{
 btn.addEventListener('click',x);
 btn.addEventListener('click',y);
 
-let a = parseInt(prompt("what is your fav number?"));
-if(a==2){
-    btn.removeEventListener('click',x);
-}
+// let a = parseInt(prompt("what is your fav number?"));
+// if(a==2){
+//     btn.removeEventListener('click',x);
+// }
+// mouse hover
+let btn2 = document.getElementById("btn2");
+// btn2.onmouseover = () =>{
+//     alert("mouse is over the button");
+// }
+
+btn2.addEventListener('mouseover',x);
+btn2.addEventListener('mouseenter',y)
+btn2.addEventListener('mouseout',x);
+// more browser event
+// mouseup/down, mousemove
+
+keybord events : 
 
 // Event Object = when an event happens, the browser create an event object, puts details into it and passesit as an arguement to the handler
 

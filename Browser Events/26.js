@@ -1,6 +1,6 @@
 document.write("Hello");
 // setTimeout()
-let a = setTimeout(function(){
+let a = setTimeout(()=>{
     alert("I am inside the setTimeout");
 },2000)
 
