@@ -21,13 +21,14 @@ let btn2 = document.getElementById("btn2");
 //     alert("mouse is over the button");
 // }
 
+btn.addEventListener('contextmenu',x)
 btn2.addEventListener('mouseover',x);
 btn2.addEventListener('mouseenter',y)
-btn2.addEventListener('mouseout',x);
+btn2.addEventListener('mouseout',y);
 // more browser event
 // mouseup/down, mousemove
 
-keybord events : 
+// keybord events : keydown, keyup
 
 // Event Object = when an event happens, the browser create an event object, puts details into it and passesit as an arguement to the handler
 
