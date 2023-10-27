@@ -90,25 +90,13 @@ let z = ()=>{
 
 
 const myFunc3 = async()=>{
-    // console.time("individual");
-    // console.time("x");
-    // let a = await x();
-    // console.timeEnd("x")
 
-    // console.time("y");
-    // let b = await y();
-    // console.timeEnd("y")
-
-    // console.time("z");
-    // let c = await z();
-    // console.timeEnd("z");
-    // console.timeEnd("individual");
 
     console.time("Promise_all");
     let a =  x();
     let b =  y();
     let c =  z();
-    let abc = await Promise.all([x,y,z]);
+    let abc = await Promise.all([a,b,c]);
     console.log(abc);
     console.timeEnd("Promise_all");
 }
