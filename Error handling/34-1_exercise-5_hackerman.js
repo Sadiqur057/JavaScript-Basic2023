@@ -34,7 +34,7 @@ let p4 = () => {
     return new Promise((resolve,reject)=>{
   setTimeout(() => {
     resolve(1);
-    a.innerHTML = "Conncecting to facebook";
+    a.innerHTML = "Connecting to facebook";
   }, 3000);
   })
 };
