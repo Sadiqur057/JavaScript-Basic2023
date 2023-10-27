@@ -64,3 +64,52 @@ a();
 
 
 // qus4 => Write a program using Promise.all() inside an async/ await to await 3 promises. Compare its result with the case where we await these promises one by one.
+
+let x = ()=>{
+    return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve("Promise 1 resolved");
+    },3000)
+})
+}
+let y = ()=>{
+    return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve("Promise 2 resolved");
+    },1000)
+})
+}
+let z = ()=>{
+    return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve("Promise 3 resolved");
+    },4000)
+})
+}
+
+
+
+const myFunc3 = async()=>{
+    // console.time("individual");
+    // console.time("x");
+    // let a = await x();
+    // console.timeEnd("x")
+
+    // console.time("y");
+    // let b = await y();
+    // console.timeEnd("y")
+
+    // console.time("z");
+    // let c = await z();
+    // console.timeEnd("z");
+    // console.timeEnd("individual");
+
+    console.time("Promise_all");
+    let a =  x();
+    let b =  y();
+    let c =  z();
+    let abc = await Promise.all([x,y,z]);
+    console.log(abc);
+    console.timeEnd("Promise_all");
+}
+myFunc3();
