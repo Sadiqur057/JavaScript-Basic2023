@@ -45,35 +45,22 @@
 
 // Create a promise which rejects after 3 seconds. use an async/await to get its value. Use a try catch to handle its error
 
-const loadScript3 = async(src)=>{
-    return new Promise((resolve,reject)=>{
-        script = document.createElement("script");
-        script.src =src;
-        document.body.appendChild(script);
-        script.onload=()=>{
-            setTimeout(()=>{
-                console.log(" Script 3 is loaded");
-                resolve(0);
-            },3000)
-        }
-        script.onerror=()=>{
-            setTimeout(()=>{
-                console.log("Error! Script 3 cannot be loaded");
-                reject(1);
-            },3000)
-        }
-    })
-}
+let p3 =()=>{
+    return new Promise((reject,resolve)=>{
+        setTimeout(()=>{
+            reject(new Error("Rejected"));
+        },1000)}
+    )}
 
-const myFunc2 = async()=>{
+let a = async()=>{
     try{
-        let p3 = await loadScript3("https://cdnn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js");
-        console.log("completed");
-    }catch(error){
-        console.log("THis is an error : "+error);
+        let c = await p3();
+        console.log(c);
+    }catch(err){
+        console.log("THis is an error : "+err);
     }
 }
-myFunc2();
+a();
 
 
 // qus4 => Write a program using Promise.all() inside an async/ await to await 3 promises. Compare its result with the case where we await these promises one by one.
