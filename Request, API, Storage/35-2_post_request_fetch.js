@@ -1,7 +1,9 @@
 const createToDO = async () => {
   let options = {
     method: "POST",
-    headers: { "Content-type": "application/json" },
+    headers: {
+      "Content-type": "application/json",
+    },
     body: JSON.stringify({
       title: "foo",
       body: "bar",
@@ -16,6 +18,12 @@ const createToDO = async () => {
   let response = await p.json();
   return response;
 };
+
+let todo = createToDO()
+.then((response)=>{
+    console.log(response);
+})
+//and
 const mainFunc = async () => {
   let todo = await createToDO();
   console.log(todo);
