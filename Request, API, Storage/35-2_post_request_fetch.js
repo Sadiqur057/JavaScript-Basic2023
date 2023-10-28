@@ -30,7 +30,7 @@ let todo = createToDO()
     console.log(todo);
     console.log(response);
 })
-
+//or
 
 const mainFunc = async () => {
   let todo = await createToDO();
