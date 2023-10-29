@@ -7,5 +7,9 @@ sessionStorage.setItem("name","sadiq");
 sessionStorage.setItem("age","23");
 sessionStorage.setItem("dept","cse");
 sessionStorage.getItem("name");
-sessionStorage.clear();
+// sessionStorage.clear();
 sessionStorage.removeItem("age");
+window.onstorage =(e)=>{
+    alert("changed");
+    console.log(e);
+}
