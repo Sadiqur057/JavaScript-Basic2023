@@ -1,14 +1,15 @@
 // Object-oriented programming (OOP) is a programming paradigm based on the concept of objects, which can contain data and code: data in the form of fields (often known as attributes or properties), and code in the form of procedures (often known as methods).
 
 class RailwayTicket {
-    submit(){
-        alert("Name: "+this.name+", form submitted");
+    confirm(){
+        alert("Hello "+this.name+", your ticket is confirmed. Your train no. "+this.trainNo);
     }
     cancel(){
-        alert("Name: "+this.name+", form is cancelled");
+        alert("Hello "+this.name+", your ticket is cancelled");
     }
-    fill(username){
+    fill(username,trainNo){
         this.name = username
+        this.trainNo = trainNo
     }
 }
 
@@ -17,9 +18,9 @@ let ticket1 = new RailwayTicket();
 let ticket2 = new RailwayTicket();
 
 // fill the ticket with details
-ticket1.fill("sadiq");
-ticket2.fill("akash");
+ticket1.fill("sadiq",123322);
+ticket2.fill("akash",223221);
 
 // perfomr action on ticket
-ticket1.submit();
+ticket1.confirm();
 ticket2.cancel();
