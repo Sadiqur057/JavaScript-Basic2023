@@ -1,4 +1,8 @@
 class Employee{
+    constructor(name){
+        this.name= name;
+        console.log("Employee name: "+name)
+    }
     login(){
         console.log("Employee has logged in");
     }
@@ -11,9 +15,14 @@ class Employee{
 }
 
 class Programmer extends Employee{
+    // access parent constructor using super keyword- overriding constructor
+    constructor(name){
+        super(name)
+    }
     reqCoffee(x){
         console.log(`Employee has requested ${x} coffees`);
     }
+    // overriding method
     reqLeaves(leaves){
         super.reqLeaves(leaves+1);
         console.log("one extra leaves granted")
@@ -21,8 +30,8 @@ class Programmer extends Employee{
 
 }
 
-let e1 = new Employee();
-let e2 = new Programmer();
+let e1 = new Employee("sadiq");
+let e2 = new Programmer("akash");
 e1.login();
 e1.reqLeaves(2);
 e2.login();
