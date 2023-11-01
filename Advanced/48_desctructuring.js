@@ -12,4 +12,21 @@ console.log(e,f,rest);
 let {x,y} = {x:1,y:2};
 console.log(x,y);
 
- 
+// Spread syntax => Allows an iterable such as an array on string to b expanded in places where zero or more arguments are expected. In an object literal, the spread syntax enumerate the properties of an object and adds the key-value pairs to the object being created
+let arr2 = [2,7,5];
+let obj2 = {...arr2};
+console.log(obj2);
+
+const sum = (v1,v2,v3)=>{
+    return v1+v2+v3;
+}
+console.log(sum(...arr2));
+
+//
+let info ={
+    myName: "sadiq",
+    age:23,
+    dept:"cse"
+}
+console.log({...info, myName:"john"});
+console.log(info);
