@@ -14,3 +14,19 @@ class Animal{
 
 let a = new Animal("tiger")
 a.walk();
+
+// difference between static and non static method
+class A{
+    static uprCase(x){
+      console.log(x.toUpperCase())
+    }
+    lwrCase(y){
+      console.log(y.toLowerCase())
+    }
+  }
+  
+  A.uprCase('abc')
+  let x = new A();
+  // x.uprCase("abc") // no need for static method
+  x.lwrCase("XYZ")
+  // A.lwrCase('XYZ')
