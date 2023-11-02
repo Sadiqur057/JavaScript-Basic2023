@@ -12,7 +12,10 @@ class PasswordGenerator{
 
         if(len<3){
             console.log("Password should be atleast 3 character long");
-        }else if(difficulties==1){
+        }else if(len==null){
+            console.log("Please choose a value");
+        }
+        else if(difficulties==1){
             let i =0;
             while(i<len){
                 this.pass+=alphabets[Math.floor(Math.random()*len)];
